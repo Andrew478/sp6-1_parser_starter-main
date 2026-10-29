@@ -64,14 +64,14 @@ function parsePage() {
 
 
     // ТЕСТ
-    let prod_pr = prod_section.querySelector('.price').textContent;
-    console.log(`price class textContent: ${prod_pr}`);
-    prod_pr = prod_pr.trim();
-    console.log(`prod_pr after trim(): ${prod_pr}`);
-    console.log(prod_pr);
-    prod_pr = prod_pr.split('₽');
-    console.log(`prod_prod стал массивом после split. Длина: ${prod_pr.length}, массив: ${prod_pr}`);
-    console.table(prod_pr);
+    // let prod_pr = prod_section.querySelector('.price').textContent;
+    // console.log(`price class textContent: ${prod_pr}`);
+    // prod_pr = prod_pr.trim();
+    // console.log(`prod_pr after trim(): ${prod_pr}`);
+    // console.log(prod_pr);
+    // prod_pr = prod_pr.split('₽');
+    // console.log(`prod_prod стал массивом после split. Длина: ${prod_pr.length}, массив: ${prod_pr}`);
+    // console.table(prod_pr);
     // КОНЕЦ
     prod_price = prod_section.querySelector('.price').textContent.trim().split('₽');
     prod_price = prod_price.reduce((arr_prices, value) => {
